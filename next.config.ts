@@ -1,12 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },
-  // Pastikan basePath kosong karena ini user page (satriaksm.github.io)
+  // untuk jaga-jaga pastikan ini ada
   basePath: "",
-  trailingSlash: true,
+  assetPrefix: "/",
 };
 
 module.exports = nextConfig;
